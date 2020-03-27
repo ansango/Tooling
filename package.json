@@ -1,0 +1,29 @@
+{
+  "name": "Tooling",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm-run-all clean parcel:dev",
+    "build": "npm-run-all clean parcel:build",
+    "parcel:dev": "parcel index.html",
+    "parcel:build": "parcel build index.html",
+    "clean": "rimraf dist .cache .cache-loader"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.7.5",
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.4",
+    "postcss-modules": "^1.5.0",
+    "rimraf": "^3.0.2"
+  },
+  "browserslist": [
+    "last 4 version",
+    "> 2%",
+    "not dead",
+    "IE 8"
+  ]
+}
